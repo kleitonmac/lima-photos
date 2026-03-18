@@ -17,55 +17,61 @@ export default function Gallery() {
   const photos = [
     {
       id: 1,
-      url: '/assets/photo1.jpeg',
+      url: "https://raw.githubusercontent.com/kleitonmac/lima-photos/refs/heads/main/assets/photo1.jpeg",
       category: 'ensaios',
-      description: 'Retrato artístico com profundidade emocional. Capturado em estúdio com iluminação natural.',
+      description:
+        'Retrato artístico com profundidade emocional. Capturado em estúdio com iluminação natural.',
     },
     {
       id: 2,
-      url: '/assets/photo2.jpeg',
+      url: "https://raw.githubusercontent.com/kleitonmac/lima-photos/refs/heads/main/assets/photo2.jpeg",
       category: 'ensaios',
-      description: 'Momento mágico do primeiro olhar. Casamento em Florianópolis, SC.',
+      description:
+        'Momento mágico do primeiro olhar. Casamento em Florianópolis, SC.',
     },
     {
       id: 3,
-      url: '/assets/photo3.jpeg',
+      url: "https://raw.githubusercontent.com/kleitonmac/lima-photos/refs/heads/main/assets/photo3.jpeg",
       category: 'ensaios',
-      description: 'Beleza natural ao amanhecer. Trilha das Cataratas, Foz do Iguaçu.',
+      description:
+        'Beleza natural ao amanhecer. Trilha das Cataratas, Foz do Iguaçu.',
     },
     {
       id: 4,
-      url: '/assets/photo4.jpeg',
+      url: "https://raw.githubusercontent.com/kleitonmac/lima-photos/refs/heads/main/assets/photo4.jpeg",
       category: 'ensaios',
       description: 'Arquitetura urbana em detalhes. São Paulo skyline à noite.',
     },
     {
       id: 5,
-      url: '/assets/photo5.jpeg',
+      url: "https://raw.githubusercontent.com/kleitonmac/lima-photos/refs/heads/main/assets/photo5.jpeg",
       category: 'ensaios',
-      description: 'Expressão autêntica capturada. Sessão familiar em Serra, ES.',
+      description:
+        'Expressão autêntica capturada. Sessão familiar em Serra, ES.',
     },
     {
       id: 6,
-      url: '/assets/photo6.jpeg',
+      url: "https://raw.githubusercontent.com/kleitonmac/lima-photos/refs/heads/main/assets/photo6.jpeg",
       category: 'casamentos',
-      description: 'Dança dos noivos sob as estrelas. Festa de casamento no campo.',
+      description:
+        'Dança dos noivos sob as estrelas. Festa de casamento no campo.',
     },
     {
       id: 7,
-      url: '/assets/photo7.jpeg',
+      url: "https://raw.githubusercontent.com/kleitonmac/lima-photos/refs/heads/main/assets/photo7.jpeg",
       category: 'turismo',
       description: 'Trilha com vista panorâmica. Chapada Diamantina, BA.',
     },
     {
       id: 8,
-      url: '/assets/photo8.jpeg',
+      url: "https://raw.githubusercontent.com/kleitonmac/lima-photos/refs/heads/main/assets/photo8.jpeg",
       category: 'show',
-      description: 'Energia do palco ao vivo. Festival de música em Vitória, ES.',
+      description:
+        'Energia do palco ao vivo. Festival de música em Vitória, ES.',
     },
     {
       id: 9,
-      url: '/assets/photo9.jpeg',
+      url: "https://github.com/kleitonmac/lima-photos/blob/main/assets/photo9.jpeg",
       category: 'ensaios',
       description: 'Olhar que conta histórias. Sessão portrait urbana.',
     },
@@ -73,7 +79,8 @@ export default function Gallery() {
       id: 10,
       url: '/assets/destaque2.jpg',
       category: 'destaque',
-      description: 'Fotografia premiada 2025. Exposição nacional de fotografia.',
+      description:
+        'Fotografia premiada 2025. Exposição nacional de fotografia.',
     },
     {
       id: 11,
@@ -131,7 +138,7 @@ export default function Gallery() {
 
   const handleTouchMove = (e: React.TouchEvent) => {
     if (!currentPhoto) return
-    
+
     const currentX = e.touches[0].clientX
     const currentY = e.touches[0].clientY
     const diffX = startX - currentX
@@ -152,7 +159,10 @@ export default function Gallery() {
       <div className="bg-[#f8e8c8] py-12 px-4 sm:py-16 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto text-center">
           <h1 className="text-4xl sm:text-5xl md:text-6xl font-light text-slate-900 mb-4">
-            Nossa <span className="font-bold bg-gradient-to-r from-slate-900 to-black bg-clip-text text-transparent">Galeria</span>
+            Nossa{' '}
+            <span className="font-bold bg-gradient-to-r from-slate-900 to-black bg-clip-text text-transparent">
+              Galeria
+            </span>
           </h1>
           <p className="text-lg sm:text-xl md:text-2xl text-slate-600 max-w-2xl mx-auto px-4">
             Explore nossa coleção de trabalhos fotográficos profissionais
@@ -204,7 +214,9 @@ export default function Gallery() {
 
         {filteredPhotos.length === 0 && (
           <div className="col-span-full text-center py-20">
-            <p className="text-2xl text-slate-500">Nenhuma foto nesta categoria</p>
+            <p className="text-2xl text-slate-500">
+              Nenhuma foto nesta categoria
+            </p>
           </div>
         )}
       </div>
@@ -216,16 +228,14 @@ export default function Gallery() {
             className="fixed inset-0 bg-black/95 z-50"
             onClick={() => setSelectedImage(null)}
           />
-          
+
           <div className="fixed inset-0 z-50 flex flex-col lg:flex-row items-center justify-center p-4 sm:p-6 w-full h-full max-w-7xl mx-auto">
-            
             {/* Imagem Central - SETAS SEMPRE VISÍVEIS */}
-            <div 
+            <div
               className="w-full lg:w-3/5 h-[70vh] lg:h-[90vh] flex items-center justify-center relative order-2 lg:order-1"
               onTouchStart={handleTouchStart}
               onTouchMove={handleTouchMove}
             >
-              
               {/* Seta ESQUERDA - VISÍVEL PC + MOBILE */}
               <button
                 className="absolute left-4 lg:left-8 top-1/2 -translate-y-1/2 w-14 h-14 lg:w-16 lg:h-16 bg-black/70 hover:bg-black/90 backdrop-blur-sm rounded-full flex items-center justify-center text-white shadow-2xl z-20 transition-all duration-200"
@@ -264,7 +274,6 @@ export default function Gallery() {
 
             {/* Painel Direito - POSIÇÃO ORIGINAL */}
             <div className="w-full lg:w-2/5 lg:ml-6 max-w-lg lg:max-w-none flex flex-col h-auto lg:h-[85vh] bg-white/90 backdrop-blur-md rounded-2xl border border-white/20 p-4 sm:p-6 lg:p-8 shadow-2xl order-1 lg:order-2 mt-4 lg:mt-0">
-              
               {/* Header */}
               <div className="flex items-center justify-between mb-6 pb-4 border-b border-slate-200">
                 <div>
