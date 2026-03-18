@@ -89,7 +89,7 @@ ${formData.message}`
             Entre em <span className="font-semibold">Contato</span>
           </h1>
           <p className="text-xl text-slate-600 max-w-2xl mx-auto">
-            WhatsApp abre automaticamente 📱
+            WhatsApp abre automaticamente 
           </p>
         </div>
       </div>
@@ -243,7 +243,7 @@ ${formData.message}`
                 className="w-full bg-emerald-600 hover:bg-emerald-700 disabled:bg-emerald-400 text-white py-5 px-8 rounded-2xl font-bold text-xl shadow-2xl hover:shadow-3xl transform hover:-translate-y-1 transition-all duration-300 flex items-center justify-center space-x-3"
               >
                 <TbBrandWhatsapp className="w-7 h-7" />
-                <span>{isSubmitting ? '🚀 Abrindo...' : '📱 WhatsApp'}</span>
+                <span>{isSubmitting ? '🚀 Abrindo...' : ' WhatsApp'}</span>
                 <FiSend className="w-6 h-6" />
               </button>
 
