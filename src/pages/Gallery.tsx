@@ -51,14 +51,14 @@ export default function Gallery() {
     },
     {
       id: 6,
-      url: "https://raw.githubusercontent.com/kleitonmac/lima-photos/refs/heads/main/assets/photo6.jpeg",
+      url: "https://raw.githubusercontent.com/kleitonmac/lima-photos/refs/heads/main/assets/photo7.jpeg",
       category: 'casamentos',
       description:
         'Dança dos noivos sob as estrelas. Festa de casamento no campo.',
     },
     {
       id: 7,
-      url: "https://raw.githubusercontent.com/kleitonmac/lima-photos/refs/heads/main/assets/photo7.jpeg",
+      url: "https://raw.githubusercontent.com/kleitonmac/lima-photos/refs/heads/main/assets/photo6.jpeg",
       category: 'turismo',
       description: 'Trilha com vista panorâmica. Chapada Diamantina, BA.',
     },
