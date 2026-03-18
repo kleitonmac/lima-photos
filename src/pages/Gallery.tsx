@@ -17,61 +17,61 @@ export default function Gallery() {
   const photos = [
     {
       id: 1,
-      url: "https://raw.githubusercontent.com/kleitonmac/lima-photos/refs/heads/main/assets/photo1.jpeg",
+      url: "https://raw.githubusercontent.com/kleitonmac/lima-photos/refs/heads/main/public/assets/photo1.jpeg",
       category: 'ensaios',
       description:
         'Retrato artístico com profundidade emocional. Capturado em estúdio com iluminação natural.',
     },
     {
       id: 2,
-      url: "https://raw.githubusercontent.com/kleitonmac/lima-photos/refs/heads/main/assets/photo2.jpeg",
+      url: "https://raw.githubusercontent.com/kleitonmac/lima-photos/refs/heads/main/public/assets/photo2.jpeg",
       category: 'ensaios',
       description:
         'Momento mágico do primeiro olhar. Casamento em Florianópolis, SC.',
     },
     {
       id: 3,
-      url: "https://raw.githubusercontent.com/kleitonmac/lima-photos/refs/heads/main/assets/photo3.jpeg",
+      url: "https://raw.githubusercontent.com/kleitonmac/lima-photos/refs/heads/main/public/assets/photo3.jpeg",
       category: 'ensaios',
       description:
         'Beleza natural ao amanhecer. Trilha das Cataratas, Foz do Iguaçu.',
     },
     {
       id: 4,
-      url: "https://raw.githubusercontent.com/kleitonmac/lima-photos/refs/heads/main/assets/photo4.jpeg",
+      url: "https://raw.githubusercontent.com/kleitonmac/lima-photos/refs/heads/main/public/assets/photo4.jpeg",
       category: 'ensaios',
       description: 'Arquitetura urbana em detalhes. São Paulo skyline à noite.',
     },
     {
       id: 5,
-      url: "https://raw.githubusercontent.com/kleitonmac/lima-photos/refs/heads/main/assets/photo5.jpeg",
+      url: "https://raw.githubusercontent.com/kleitonmac/lima-photos/refs/heads/main/public/assets/photo5.jpeg",
       category: 'ensaios',
       description:
         'Expressão autêntica capturada. Sessão familiar em Serra, ES.',
     },
     {
       id: 6,
-      url: "https://raw.githubusercontent.com/kleitonmac/lima-photos/refs/heads/main/assets/photo7.jpeg",
+      url: "https://raw.githubusercontent.com/kleitonmac/lima-photos/refs/heads/main/public/assets/photo7.jpeg",
       category: 'casamentos',
       description:
         'Dança dos noivos sob as estrelas. Festa de casamento no campo.',
     },
     {
       id: 7,
-      url: "https://raw.githubusercontent.com/kleitonmac/lima-photos/refs/heads/main/assets/photo6.jpeg",
+      url: "https://raw.githubusercontent.com/kleitonmac/lima-photos/refs/heads/main/public/assets/photo6.jpeg",
       category: 'turismo',
       description: 'Trilha com vista panorâmica. Chapada Diamantina, BA.',
     },
     {
       id: 8,
-      url: "https://raw.githubusercontent.com/kleitonmac/lima-photos/refs/heads/main/assets/photo8.jpeg",
+      url: "https://raw.githubusercontent.com/kleitonmac/lima-photos/refs/heads/main/public/assets/photo8.jpeg",
       category: 'show',
       description:
         'Energia do palco ao vivo. Festival de música em Vitória, ES.',
     },
     {
       id: 9,
-      url: "https://github.com/kleitonmac/lima-photos/blob/main/assets/photo9.jpeg",
+      url: "https://github.com/kleitonmac/lima-photos/blob/main/public/assets/photo9.jpeg",
       category: 'ensaios',
       description: 'Olhar que conta histórias. Sessão portrait urbana.',
     },
